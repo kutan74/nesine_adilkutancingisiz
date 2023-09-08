@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SearchViewController: UIViewController {
 
     private let subview = SearchView()
     private let viewModel = SearchViewModel()
@@ -30,7 +30,7 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: UITextFieldDelegate {
+extension SearchViewController: UITextFieldDelegate {
         
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         let previousText:NSString = textField.text! as NSString
@@ -66,7 +66,7 @@ extension ViewController: UITextFieldDelegate {
     
 }
 
-extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension SearchViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         softwares.count
