@@ -1,0 +1,1 @@
+# nesine_adilkutancingisiz
