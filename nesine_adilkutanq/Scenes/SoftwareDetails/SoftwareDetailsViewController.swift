@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SoftwareDetailsViewController: UIViewController {
+final class SoftwareDetailsViewController: UIViewController {
     
     private let image: UIImage
     
@@ -33,7 +33,7 @@ class SoftwareDetailsViewController: UIViewController {
         setupConstraints()
     }
     
-    func setupConstraints() {
+    private func setupConstraints() {
         view.addSubview(imageView)
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true

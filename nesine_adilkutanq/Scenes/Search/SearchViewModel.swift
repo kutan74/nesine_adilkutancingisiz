@@ -7,14 +7,10 @@
 
 import UIKit
 
-class SearchViewModel {
+final class SearchViewModel {
     
-    private let networking = Network()
-    
+    private let networking = Network()    
     private var searchTask: DispatchWorkItem?
-    
-    var softwares: [Software] = []
-    
     private var pendingRequestWorkItem: DispatchWorkItem?
     
     func makeSearch(term: String, completion: @escaping ([Software]) -> Void) {

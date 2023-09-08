@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SearchView: UIView {
+final class SearchView: UIView {
     
     let searchTextField: UITextField = {
         let textField = UITextField()
@@ -49,7 +49,7 @@ class SearchView: UIView {
         
     }
     
-    func setupCollectionView() {
+    private func setupCollectionView() {
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.itemSize = .init(width: UIScreen.main.bounds.size.width - 150, height: 150)
         layout.scrollDirection = .vertical

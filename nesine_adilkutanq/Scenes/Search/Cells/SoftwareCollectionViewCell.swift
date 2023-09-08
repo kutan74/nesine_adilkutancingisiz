@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SoftwareCollectionViewCell: UICollectionViewCell {
+final class SoftwareCollectionViewCell: UICollectionViewCell {
     
     let artworkImageView: UIImageView = {
         let imageView = UIImageView()
@@ -27,7 +27,7 @@ class SoftwareCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setupConstraints() {
+    private func setupConstraints() {
         addSubview(artworkImageView)
         artworkImageView.translatesAutoresizingMaskIntoConstraints = false
         artworkImageView.topAnchor.constraint(equalTo: topAnchor).isActive = true

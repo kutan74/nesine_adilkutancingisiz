@@ -11,6 +11,5 @@ struct Software: Codable {
     
     let screenshotUrls: [String]
     let artworkUrl60: URL
-    
-    
+        
 }

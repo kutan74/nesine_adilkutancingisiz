@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SearchViewController: UIViewController {
+final class SearchViewController: UIViewController {
 
     private let subview = SearchView()
     private let viewModel = SearchViewModel()
@@ -30,6 +30,7 @@ class SearchViewController: UIViewController {
 
 }
 
+// MARK: TextField Delegate
 extension SearchViewController: UITextFieldDelegate {
         
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
@@ -66,6 +67,7 @@ extension SearchViewController: UITextFieldDelegate {
     
 }
 
+// MARK: CollectionView Delegate
 extension SearchViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -79,7 +81,7 @@ extension SearchViewController: UICollectionViewDelegate, UICollectionViewDataSo
             let software = softwares[indexPath.row]
             cell.showSpinner()
         
-            viewModel.images(forURLs: software.screenshotUrls) { [weak self] images in
+            viewModel.images(forURLs: software.screenshotUrls) { images in
                 cell.artworkImageView.image = images.first ?? UIImage(systemName: "arrow.down.circle")
                 cell.hideSpinner()
             }

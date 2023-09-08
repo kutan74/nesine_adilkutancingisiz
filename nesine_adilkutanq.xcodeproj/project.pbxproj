@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		CFDB1C742AA5C8C0005B8384 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB1C732AA5C8C0005B8384 /* AppDelegate.swift */; };
 		CFDB1C762AA5C8C0005B8384 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB1C752AA5C8C0005B8384 /* SceneDelegate.swift */; };
-		CFDB1C782AA5C8C0005B8384 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB1C772AA5C8C0005B8384 /* ViewController.swift */; };
+		CFDB1C782AA5C8C0005B8384 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB1C772AA5C8C0005B8384 /* SearchViewController.swift */; };
 		CFDB1C7B2AA5C8C0005B8384 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFDB1C792AA5C8C0005B8384 /* Main.storyboard */; };
 		CFDB1C7D2AA5C8C0005B8384 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFDB1C7C2AA5C8C0005B8384 /* Assets.xcassets */; };
 		CFDB1C802AA5C8C0005B8384 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFDB1C7E2AA5C8C0005B8384 /* LaunchScreen.storyboard */; };
@@ -47,7 +47,7 @@
 		CFDB1C702AA5C8C0005B8384 /* nesine_adilkutanq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nesine_adilkutanq.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFDB1C732AA5C8C0005B8384 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFDB1C752AA5C8C0005B8384 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CFDB1C772AA5C8C0005B8384 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CFDB1C772AA5C8C0005B8384 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		CFDB1C7A2AA5C8C0005B8384 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFDB1C7C2AA5C8C0005B8384 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFDB1C7F2AA5C8C0005B8384 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -182,13 +182,29 @@
 		CFDB1CB72AA9F398005B8384 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				CFDB1CB12AA72B5A005B8384 /* NoResultView.swift */,
-				CFDB1CAF2AA5D02C005B8384 /* SoftwareCollectionViewCell.swift */,
+				CFDB1D0E2AAB05C6005B8384 /* Cells */,
+				CFDB1D0D2AAB05BF005B8384 /* Views */,
 				CFDB1CA62AA5CA84005B8384 /* SearchViewModel.swift */,
 				CFDB1CA42AA5C8E8005B8384 /* SearchView.swift */,
-				CFDB1C772AA5C8C0005B8384 /* ViewController.swift */,
+				CFDB1C772AA5C8C0005B8384 /* SearchViewController.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		CFDB1D0D2AAB05BF005B8384 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CFDB1CB12AA72B5A005B8384 /* NoResultView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CFDB1D0E2AAB05C6005B8384 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CFDB1CAF2AA5D02C005B8384 /* SoftwareCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,7 +344,7 @@
 				CFDB1CA72AA5CA84005B8384 /* SearchViewModel.swift in Sources */,
 				CFDB1CB02AA5D02C005B8384 /* SoftwareCollectionViewCell.swift in Sources */,
 				CFDB1CB22AA72B5A005B8384 /* NoResultView.swift in Sources */,
-				CFDB1C782AA5C8C0005B8384 /* ViewController.swift in Sources */,
+				CFDB1C782AA5C8C0005B8384 /* SearchViewController.swift in Sources */,
 				CFDB1CAE2AA5CBE6005B8384 /* Software.swift in Sources */,
 				CFDB1C742AA5C8C0005B8384 /* AppDelegate.swift in Sources */,
 				CFDB1C762AA5C8C0005B8384 /* SceneDelegate.swift in Sources */,
